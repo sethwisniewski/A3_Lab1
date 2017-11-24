@@ -10,8 +10,8 @@
     debugger;
     let objectIndex = carData[this.id];
 
-    theHeading.firstChild.nodeValue = carData.headline;
-    theDetails.firstChild.nodevale = carData.text;
+    theHeading.firstChild.nodeValue = objectIndex.headline;
+    theDetails.firstChild.nodeValue = objectIndex.text;
     appliedClass = this.id;
   }
 
@@ -21,4 +21,4 @@
 
     });
 
-})();
+});
