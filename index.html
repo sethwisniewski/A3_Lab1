@@ -26,6 +26,36 @@
       </nav>
     </header>
 
+    <!-- add video here -->
+    <section class="row">
+      <!-- <div class="small-3 columns"></div> -->
+      <div class="small-12 columns video-container">
+        <i class="fa fa-volume-off vol-indicator"></i><!-- fa-volume-up on mouseover -->
+        <video class="responsive" autoplay muted poster="images/vid1_large.png">
+          <!-- we should do fallbacks here, but for now we'll just work with mp4 -->
+          <source src="video/mini_1.mp4" type="video/mp4">
+          Your browser doesn't support video?!? that sucks.
+        </video>
+
+        <div class="vid-overlay">
+          <i class="fa fa-repeat" role="button"></i>
+          <p>replay video</p>
+        </div>
+      </div>
+
+      <ul class="video-thumbs">
+        <!-- <li class="vid-thumb" role="button" data-videopath="mini_1">
+          <img src="" alt="mini commercial" class="responsive">
+        </li>
+        <li class="vid-thumb" role="button" data-videopath="mini_2">
+          <img src="" alt="mini commercial" class="responsive">
+        </li>
+        <li class="vid-thumb" role="button" data-videopath="mini_3">
+          <img src="" alt="mini commercial" class="responsive">
+        </li> -->
+      </ul>
+    </section>
+
     <!-- thumbnail images -->
     <div class="row car-thumbs">
       <div class="small-6 columns">
@@ -33,9 +63,9 @@
         <div class="thumbInfo">
 
           <!-- ===== USE THESE IMG ELEMENTS (hint - an attribute is key) TO RETRIEVE THE DATA === -->
-          <img class="data-ref" src="images/F55.jpg" alt="blue mini" id="blue" data-roundaboutindex="0">
-          <img class="data-ref" src="images/F56.jpg" alt="yellow mini" id="yellow" data-roundaboutindex="1">
-          <img class="data-ref" src="images/R57.jpg" alt="convertible mini" id="red" data-roundaboutindex="2">
+          <img class="data-ref" src="images/F55.jpg" alt="blue mini" id="F55" data-roundaboutindex="0">
+          <img class="data-ref" src="images/F56.jpg" alt="yellow mini" id="F56" data-roundaboutindex="1">
+          <img class="data-ref" src="images/R57.jpg" alt="convertible mini" id="R58" data-roundaboutindex="2">
 
         </div>
         <hr>
@@ -73,7 +103,7 @@
     <script>
       $(document).foundation();
     </script>
-    <script src="js/carData.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/modules/video.js"></script>
   </body>
 </html>
